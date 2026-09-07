@@ -1,0 +1,2 @@
+# Phase 1
+I used a getter for discountedPrice because the discounted price is calculated from the products basePrice and discount. The getter calculates the value when its called instead of using a new variable. This is better in case the base price or discount changes a separate discountedPrice would need to be constantly updated. I also used a getter for isLowStock because it can also be calculated from stockQuantity
