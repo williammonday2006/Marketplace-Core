@@ -1,2 +1,5 @@
 # Phase 1
 I used a getter for discountedPrice because the discounted price is calculated from the products basePrice and discount. The getter calculates the value when its called instead of using a new variable. This is better in case the base price or discount changes a separate discountedPrice would need to be constantly updated. I also used a getter for isLowStock because it can also be calculated from stockQuantity
+
+# Phase 2
+The regular constructor and the named constructors all create Product objects, but each is used for different tasks. The regular constructor allows me to specify the normal product information. The Product.onSale() constructor returns the product a 10% discount. The Product.bulk() constructor lets me create a product with a larger stock quantity. I prefer named parameters because they make it clear what each value represents when creating an object. I also prefer named constructors because Product.onSale() and Product.bulk() clearly communicate what type of product is being created.
