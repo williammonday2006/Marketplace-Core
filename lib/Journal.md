@@ -3,3 +3,6 @@ I used a getter for discountedPrice because the discounted price is calculated f
 
 # Phase 2
 The regular constructor and the named constructors all create Product objects, but each is used for different tasks. The regular constructor allows me to specify the normal product information. The Product.onSale() constructor returns the product a 10% discount. The Product.bulk() constructor lets me create a product with a larger stock quantity. I prefer named parameters because they make it clear what each value represents when creating an object. I also prefer named constructors because Product.onSale() and Product.bulk() clearly communicate what type of product is being created.
+
+# Phase 3
+As the number of models grows, named parameters help keep the code organized because they make it clear what each argument represents when creating an object. Getters also help organize the code because they allow calculated values to be accessed without storing extra properties. For example, the discountedPrice getter calculates the current price based on the product's base price and discount. The Bundle class uses a list of Product objects and does not need to know how those products were created. It can simply use the discountedPrice getter from each product to calculate the bundle's total price.
